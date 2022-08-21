@@ -48,7 +48,7 @@ console.log(Object.keys(crayon)) // Print all methods
 ```
 
 ## Custom stream
-It's only used to check if colors are available on that stream, that's it.
+It's only used to check if colors are available on that stream, that's it.\
 By default it checks on `process.stdout` which is enough.
 
 ```javascript
