@@ -12,6 +12,9 @@ function Crayon (stream = process.stdout) {
   for (const info of [modifiers1, modifiers2, colors, colorsBright, bgColor, bgColorBright]) {
     generator(this, info, stream.isTTY)
   }
+
+  this.gray = this.grey = this.blackBright
+  this.bgGray = this.bgGrey = this.bgBlackBright
 }
 
 function paint (code) {
