@@ -43,6 +43,18 @@ console.log(
   crayon.bgBlue('hey'),
   crayon.bgBlueBright('hey')
 )
+
+console.log(Object.keys(crayon)) // Print all methods
+```
+
+## Custom stream
+It's only used to check if colors are available on that stream, that's it.
+By default it checks on `process.stdout` which is enough.
+
+```javascript
+const { Crayon } = require('tiny-crayon')
+const crayon = new Crayon(process.stderr)
+console.error(crayon.green('hey'))
 ```
 
 ## License
