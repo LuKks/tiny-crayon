@@ -14,7 +14,9 @@ function Crayon (stream = process.stdout) {
   }
 }
 
-const paint = (code) => '\x1B[' + code + 'm'
+function paint (code) {
+  return '\x1B[' + code + 'm'
+}
 
 function decorate (isEnabled, [open, close], ...args) {
   if (!isEnabled) {
