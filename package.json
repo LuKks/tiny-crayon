@@ -3,6 +3,10 @@
   "version": "1.0.4",
   "description": "Terminal string styling",
   "main": "index.js",
+  "scripts": {
+    "test": "standard && brittle test.js",
+    "lint": "standard"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LuKks/tiny-crayon.git"
@@ -12,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/LuKks/tiny-crayon/issues"
   },
-  "homepage": "https://github.com/LuKks/tiny-crayon"
+  "homepage": "https://github.com/LuKks/tiny-crayon",
+  "devDependencies": {
+    "brittle": "^3.1.1",
+    "standard": "^17.0.0"
+  }
 }
