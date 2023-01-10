@@ -1,6 +1,6 @@
 {
   "name": "tiny-crayon",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Terminal string styling",
   "main": "index.js",
   "scripts": {
