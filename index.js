@@ -10,7 +10,7 @@ function Crayon (stream = process.stdout) {
   const bgColorBright = { index: 100, list: ['bgBlackBright', 'bgRedBright', 'bgGreenBright', 'bgYellowBright', 'bgBlueBright', 'bgMagentaBright', 'bgCyanBright', 'bgWhiteBright'], close: 49 }
 
   for (const info of [modifiers1, modifiers2, colors, colorsBright, bgColor, bgColorBright]) {
-    generator(this, info, stream.isTTY)
+    generator(this, info, typeof stream === 'object' && stream ? stream.isTTY : false)
   }
 
   this.gray = this.grey = this.blackBright
